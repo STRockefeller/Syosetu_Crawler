@@ -1,0 +1,14 @@
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\Syosetu_Crawler.exe.config
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\Syosetu_Crawler.exe
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\Syosetu_Crawler.pdb
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\HtmlAgilityPack.dll
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\HtmlAgilityPack.pdb
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Release\HtmlAgilityPack.xml
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.csprojAssemblyReference.cache
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.frmBase.resources
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.Properties.Resources.resources
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.csproj.GenerateResource.cache
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.csproj.CoreCompileInputs.cache
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.csproj.CopyComplete
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.exe
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Release\Syosetu_Crawler.pdb

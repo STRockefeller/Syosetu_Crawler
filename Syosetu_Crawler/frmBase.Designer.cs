@@ -188,7 +188,7 @@
             this.tbxDelayTime.Name = "tbxDelayTime";
             this.tbxDelayTime.Size = new System.Drawing.Size(40, 25);
             this.tbxDelayTime.TabIndex = 17;
-            this.tbxDelayTime.Text = "0";
+            this.tbxDelayTime.Text = "1000";
             // 
             // frmBase
             // 

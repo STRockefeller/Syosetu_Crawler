@@ -1,7 +1,6 @@
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\Syosetu_Crawler.exe.config
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\Syosetu_Crawler.exe
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\Syosetu_Crawler.pdb
-D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.csprojAssemblyReference.cache
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.frmBase.resources
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.Properties.Resources.resources
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.csproj.GenerateResource.cache
