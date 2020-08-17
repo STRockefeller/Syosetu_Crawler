@@ -9,16 +9,18 @@ namespace Syosetu_Crawler
     /// <summary>
     /// 小說類別
     /// </summary>
-    class Novels
+    internal class Novels
     {
         /// <summary>
         /// 小說名稱
         /// </summary>
         public string Name { get; set; }
+
         /// <summary>
         /// 章節名稱
         /// </summary>
         public string ChapterTitle { get; set; }
+
         /// <summary>
         /// 章節內文
         /// </summary>

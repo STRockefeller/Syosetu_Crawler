@@ -20,14 +20,17 @@ namespace Syosetu_Crawler
         /// 延遲時間(毫秒)
         /// </summary>
         private int delayTimeMilliSeconds = 0;
+
         /// <summary>
         /// 無法再次獲取資料判定，用於終止執行
         /// </summary>
         private bool cannotGetArticle = false;
+
         /// <summary>
         /// 文章list
         /// </summary>
         private static List<Novels> novels = new List<Novels>();
+
         /// <summary>
         /// 檢查資料是否填妥
         /// </summary>
@@ -40,6 +43,7 @@ namespace Syosetu_Crawler
                 return false;
             return true;
         }
+
         /// <summary>
         /// 開始獲取文章
         /// </summary>
@@ -48,17 +52,22 @@ namespace Syosetu_Crawler
         private async Task startCrawlerAsync(string url)
         {
             #region httpClient (fail)
+
             //HttpClient httpClient = new HttpClient();
             //httpClient.Timeout = TimeSpan.FromSeconds(2);
             //string html = await httpClient.GetStringAsync(url);
             //HtmlAgilityPack.HtmlDocument htmlDocument = new HtmlAgilityPack.HtmlDocument();
             //htmlDocument.LoadHtml(html);
-            #endregion
+
+            #endregion httpClient (fail)
 
             #region webclient instead
+
             HtmlWeb webClient = new HtmlWeb();
             HtmlAgilityPack.HtmlDocument htmlDocument = webClient.Load(url);
-            #endregion
+
+            #endregion webclient instead
+
             Novels novel = new Novels();
             try
             {
@@ -76,11 +85,11 @@ namespace Syosetu_Crawler
             originalArticle = htmlDocument.DocumentNode.Descendants("div").Where(node => node.GetAttributeValue("class", "").Equals("novel_view")).FirstOrDefault();
             List<HtmlNode> articleList = new List<HtmlNode>();
             articleList = originalArticle.Descendants("p").ToList();
-            foreach(HtmlNode article in articleList)
+            foreach (HtmlNode article in articleList)
             {
                 if (article.InnerText == "<br />")
                     novel.ChapterContext += "\r\n";
-                else if(article.InnerText == "")
+                else if (article.InnerText == "")
                     novel.ChapterContext += "\r\n";
                 else
                     novel.ChapterContext += article.InnerText;
@@ -88,6 +97,7 @@ namespace Syosetu_Crawler
             previewUpdate($"{novel.ChapterTitle}\r\n{novel.ChapterContext}");
             novels.Add(novel);
         }
+
         /// <summary>
         /// 刷新Preview欄位資料
         /// </summary>
@@ -96,6 +106,7 @@ namespace Syosetu_Crawler
         {
             tbxROPreview.Text += str;
         }
+
         /// <summary>
         /// 匯出成txt檔案
         /// </summary>
@@ -103,7 +114,7 @@ namespace Syosetu_Crawler
         {
             if (novels.Count < 1)
                 return;
-            foreach(Novels novel in novels)
+            foreach (Novels novel in novels)
             {
                 string folderPath = $".\\Novels_txt\\{novel.Name}\\";
                 string fileName = $"{folderPath}{novel.ChapterTitle}.txt";
@@ -117,12 +128,13 @@ namespace Syosetu_Crawler
                     FileStream fileStream = new FileStream(fileNameC, FileMode.Create);
                     fileStream.Close();
                 }
-               
+
                 StreamWriter streamWriter = new StreamWriter(fileNameC);
                 streamWriter.WriteLine(novel.ChapterContext);
                 streamWriter.Close();
             }
         }
+
         /// <summary>
         /// 移除路徑中的非法字元
         /// </summary>
@@ -142,12 +154,13 @@ namespace Syosetu_Crawler
 
             return fileName;
         }
+
         /// <summary>
         /// 時間延遲
         /// </summary>
         private void delay()
         {
-            SpinWait.SpinUntil(()=> { return false; },delayTimeMilliSeconds);
+            SpinWait.SpinUntil(() => { return false; }, delayTimeMilliSeconds);
         }
     }
 }

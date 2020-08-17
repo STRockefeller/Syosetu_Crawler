@@ -1,6 +1,15 @@
 # Syosetu_Crawler
+
 ## Abstract
 A Downloader for the novels in 小説家になろう.
+
+## Image
+![Sample Image](https://i.imgur.com/1s1YI4g.png)
+
+## Download Path
+Syosetu_Crawler\bin\Debug(or Release)\Novels_txt
+![Sample Image](https://i.imgur.com/mu86cZG.png)
+
 ## Announce
 
 > From the "注意事項" in 小説家になろう

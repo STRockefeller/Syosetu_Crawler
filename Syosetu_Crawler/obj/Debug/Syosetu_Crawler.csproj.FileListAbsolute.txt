@@ -11,3 +11,4 @@ D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\HtmlAgilityPack.dll
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\HtmlAgilityPack.pdb
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\bin\Debug\HtmlAgilityPack.xml
 D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.csproj.CopyComplete
+D:\Projects\Syosetu_Crawler\Syosetu_Crawler\obj\Debug\Syosetu_Crawler.csprojAssemblyReference.cache
